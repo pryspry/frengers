@@ -82,6 +82,8 @@ $(document).ready(function() {
 
         if($(this).scrollTop() > 430) {
             $('.navbar').addClass('opaque'); // adding the opaque class
+            $('.dropdown-menu').addClass('opaque'); // adding the opaque class
+
         } else {
             $('.navbar').removeClass('opaque'); // removing the opaque class
         }

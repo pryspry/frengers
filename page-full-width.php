@@ -13,7 +13,8 @@ Template Name: Full Width Page
 
     <?php
     $args = array(
-      'cat' => 2
+      'cat' => 2,
+      'showposts' => 8
       );
 
     $the_query = new WP_Query( $args );
@@ -57,7 +58,7 @@ Template Name: Full Width Page
         <div class="col-md-8">
           <?php
             $args1 = array(
-              'cat' => '-2'
+              'cat' => '-2',
               );
 
             $query = new WP_Query( $args1 );

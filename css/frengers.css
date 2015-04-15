@@ -408,20 +408,50 @@ Notice that some of the styles below are for compatibility with Bootstrap Theme.
    background-color: rgba(44,62,50, 0.5);
 }
 
+.navbar li a:hover{
+  background: #87d37c;
+}
+
+.dropdown-menu {
+  background-color: rgba(44,62,50, 0.5);
+  color: #fff;
+}
+
+.dropdown-menu li a{
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #ffffff;
+    border-bottom: 5px solid #87d37c;
+}
+
 .navbar.opaque {
-  background-color: rgba(236,240,231, 0.5);
-  background: rgba(236,240,231, 0.5);
+  background-color: rgba(236,240,231, 0.9);
+  background: rgba(236,240,231, 0.9);
   transition: background-color 1s ease 0s; /* Transition effect to make it fade in (optional) */
 }
 .navbar.opaque li a{
   color:#000;
 }
 
-.navbar .opaque .navbar-brand{
-  color:#000;
+.navbar.opaque .active{
+  background: #87d37c;
 }
 
+.navbar.opaque.navbar-default .navbar-brand {
+    color: #000;
+}
 
+.navbar.opaque.navbar-default .dropdown-menu{
+  background-color: rgba(236,240,231, 0.9);
+  color: #000;
+}
+
+.navbar.opaque.navbar-default.dropdown-menu.opaque li a{
+  color: #000;
+}
 
 #artworks img {
     transition: opacity 0.5s ease;
@@ -437,6 +467,8 @@ Notice that some of the styles below are for compatibility with Bootstrap Theme.
 
 #artworks{
   min-height: 300px;
+  margin-bottom: 15px;
+
 
 }
 
