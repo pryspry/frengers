@@ -48,13 +48,13 @@
   </div><!-- /.container -->
 </nav>
 <?php tha_header_before(); ?>
-<div class="container">
+<!--<div class="container">
   <?php tha_header_top(); ?>
-  <!--<div class="row">
+  <div class="row">
     <div class="col-sm-12">
     </div>
-  </div>-->
+  </div>
   <?php tha_header_bottom(); ?>
-</div>
+</div>-->
 
 

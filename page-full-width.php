@@ -33,9 +33,6 @@ Template Name: Full Width Page
     /* Restore original Post Data */
     wp_reset_postdata();
     ?>
-
-
-
       </div>
     </div>
   </div>
@@ -56,6 +53,8 @@ Template Name: Full Width Page
     <div class="row">
       <div class="container">
         <div class="col-md-8">
+
+
           <?php
             $args1 = array(
               'cat' => '-2',
@@ -65,13 +64,20 @@ Template Name: Full Width Page
 
             // The Loop
             if ( $query->have_posts() ) {
-              echo "<ul>";
               while ( $query->have_posts() ) {
+                echo "<div class='post'>";
                 $query->the_post();
-                echo "<li>" . get_the_title() . "</li>";
-                echo "<li>" . get_the_content() . "</li>";
+                echo "<div class='featured'>";
+                  echo get_the_post_thumbnail();
+                  echo "<h1>".get_the_title()."</h1>";
+                echo "</div>";
+                echo "<div class='inner'>";
+                echo "<div class='meta'>".the_date()."</div>";
+                echo "<div class='content'>" . get_the_content() . "</div>";
+                echo "</div>";
+                 echo "</div>";
               }
-              echo "</li>";
+
             } else {
               // no posts found
             }

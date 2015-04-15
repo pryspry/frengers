@@ -406,6 +406,7 @@ Notice that some of the styles below are for compatibility with Bootstrap Theme.
 /* custom by dhika */
 .navbar{
    background-color: rgba(44,62,50, 0.5);
+   font-size: 1.6em;
 }
 
 .navbar li a:hover{
@@ -480,5 +481,46 @@ Notice that some of the styles below are for compatibility with Bootstrap Theme.
 #artworks .item,
 .grid-sizer {
   width: 25%;
+}
+
+.post{
+  border: 1px solid #F2F1EF;
+  margin-bottom: 15px;
+}
+
+.post .featured img{
+  min-width: 100%;
+  height: auto;
+  position: relative;
+}
+.post .featured h1{
+   margin-top: -30px;
+    position: relative;
+
+    width: 100%;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.post .featured h1 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+.post .featured h1 span.spacer {
+   padding:0 5px;
+}
+
+.post .inner{
+  padding: 10px;
+}
+
+.post .inner .meta{
+  margin-bottom: 5px;
 }
 

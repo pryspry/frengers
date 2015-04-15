@@ -90,5 +90,16 @@ $(document).ready(function() {
     });
   })();
 
+  $(function() {
+
+    $(".post .featured h1")
+        .wrapInner("<span>")
+
+    $(".post .featured h1 br")
+        .before("<span class='spacer'>")
+        .after("<span class='spacer'>");
+
+});
+
 
 });
